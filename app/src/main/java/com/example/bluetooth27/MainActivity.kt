@@ -40,11 +40,11 @@ class MainActivity : AppCompatActivity() {
 
                     val device: BluetoothDevice? =
                         intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE)
+
                     if (device == null) {
                         Log.d("nullDevice", "Device is null")
                         return
                     }
-
 
                     val deviceHardwareAddress = device?.address // MAC address
 
